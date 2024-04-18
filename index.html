@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Operation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Database Operation</h2>
+    <form id="queryForm">
+        <!-- Operation Section -->
+        <div id="operationSelector">
+            <label for="operation">Operation:</label>
+            <select id="operation" name="operation">
+                <option value="View">View</option>
+                <option value="Insert">Insert</option>
+                <option value="Delete">Delete</option>
+                <option value="Join">Join</option>
+            </select>
+        </div>
+
+        <!-- Table Selector Section -->
+        <div id="tableSelector">
+            <label for="table1">Table:</label>
+            <select id="table1" name="table1">
+                <option value="GamesReleased">GamesReleased</option>
+                <option value="Sales">Sales</option>
+                <option value="Staff">Staff</option>
+                <option value="BugTracking">BugTracking</option>
+            </select>
+
+            <!-- Second table selector for Join operation -->
+            <select id="table2" name="table2" style="display: none;">
+                <option value="GamesReleased">GamesReleased</option>
+                <option value="Sales">Sales</option>
+                <option value="Staff">Staff</option>
+                <option value="BugTracking">BugTracking</option>
+            </select>
+
+            <!-- Go button -->
+            <button type="submit">Go</button>
+        </div>
+    </form>
+
+    <div id="inpFieldDiv">
+        
+    </div>
+
+    <!-- Result Section -->
+    <div id="result">
+        <!-- Result table will be displayed here -->
+    </div>
+
+    <script src="client.js">
+    </script>
+</body>
+</html>
